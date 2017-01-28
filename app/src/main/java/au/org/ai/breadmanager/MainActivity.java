@@ -24,9 +24,7 @@ import java.util.Hashtable;
  */
 public class MainActivity extends AppCompatActivity {
 
-    // TODO Relinquish Routes - Names instead of PKs
     // TODO overflow menu buttons to white
-    // TODO networking time?
 
     private MainActivity mainActivity = this;
     private boolean connected = false;
