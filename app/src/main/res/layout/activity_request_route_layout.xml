@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dp" android:paddingTop="8dp" android:paddingBottom="8dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/request_internal_layout">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_be_replaced" android:textSize="16sp"
+            android:id="@+id/request_internal_route_name"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+    <Switch android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/switch_thumb" android:track="@drawable/switch_track"
+            android:textOn="On" android:textOff="Off" android:showText="true"
+            android:switchTextAppearance="@style/SwitchStyle"
+            android:layout_alignParentRight="true"
+            android:checked="false"
+            android:id="@+id/request_internal_switch" android:layout_centerVertical="true"/>
+</RelativeLayout>

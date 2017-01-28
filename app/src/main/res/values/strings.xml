@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BreadManager</string>
+    <string name="connect">CONNECT</string>
+    <string name="request_routes">REQUEST ROUTES</string>
+    <string name="region_code">REGION CODE</string>
+    <string name="info">INFO</string>
+    <string name="done">DONE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="refresh">Refresh</string>
+    <string name="relinquish_groups">Relinquish Groups</string>
+    <string name="logout">Logout</string>
+    <string name="ok">ok</string>
+    <string name="relinquish_routes">Relinquish Routes</string>
+    <string name="delivery_time">delivery_time</string>
+    <string name="church_name">church_name</string>
+    <string name="to_be_replaced">to be replaced</string>
+</resources>

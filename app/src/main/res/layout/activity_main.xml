@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="au.org.ai.breadmanager.MainActivity" android:background="#ffffff">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:id="@+id/main_header"
+            android:background="@color/colorLighterGrey" android:layout_alignParentStart="true" android:padding="16dp">
+        <EditText
+                android:background="@drawable/edit_text_underline_1"
+                android:layout_width="wrap_content"
+                android:layout_height="48sp"
+                android:id="@+id/main_region_code_field"
+                android:focusable="true" android:singleLine="true"
+                android:text="@string/region_code" android:gravity="center"
+                android:textSize="16sp" android:editable="true" android:enabled="true"
+                android:inputType="number" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/main_connect_button"/>
+        <Button
+                android:textColor="@drawable/selector_text_1"
+                android:id="@+id/main_connect_button"
+                android:layout_width="108sp"
+                android:layout_height="48sp"
+                android:text="@string/connect"
+                android:background="@drawable/button2"
+                android:layout_alignParentTop="false" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false" android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp" android:textSize="16sp"/>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_scrollView"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/main_header"
+            android:fillViewport="false" android:layout_above="@+id/main_request_routes_button">
+        <LinearLayout
+                android:divider="@drawable/divider"
+                android:id="@+id/main_route_holder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center" android:showDividers="middle"
+                android:baselineAligned="false" android:padding="16dp" android:dividerPadding="0dp"
+                android:measureWithLargestChild="false">
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+            android:background="@drawable/selector_button_1"
+            android:textColor="@drawable/selector_text_2"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_routes"
+            android:id="@+id/main_request_routes_button"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/request_scrollView"
+            android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" android:layout_alignParentLeft="true" android:enabled="false"/>
+</RelativeLayout>
