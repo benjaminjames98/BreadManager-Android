@@ -25,8 +25,7 @@ class Networker extends AsyncTask<String, Integer, String> {
   private String type;
 
   /**
-   * @param mainActivity
-   *     The Application's main activity.
+   * @param mainActivity The Application's main activity.
    */
   Networker(MainActivity mainActivity) {
     this(mainActivity, DEFAULT_SIGNAL);
@@ -37,8 +36,7 @@ class Networker extends AsyncTask<String, Integer, String> {
     this.type = type;
   }
 
-  @Override
-  protected String doInBackground(String... strings) {
+  @Override protected String doInBackground(String... strings) {
     if (strings == null || strings[0].equals("")) {
       return "-1"; // invalid input.
     }
@@ -51,7 +49,8 @@ class Networker extends AsyncTask<String, Integer, String> {
 
     String response = "-3";
     //String TARGET_URL = "http://10.0.0.247/cityNet/BreadScript.php?";
-    String TARGET_URL = "http://stott.id.au/cityNet/BreadScript.php?";
+    //String TARGET_URL = "http://stott.id.au/cityNet/BreadScript.php?";
+    String TARGET_URL = "http://ai.org.au/ai-includes/BreadScript.php?";
     String urlString = (TARGET_URL + query).replace(" ", "%20");
     System.out.println(urlString);
 
@@ -68,8 +67,7 @@ class Networker extends AsyncTask<String, Integer, String> {
     return response;
   }
 
-  @Override
-  protected void onPostExecute(String response) {
+  @Override protected void onPostExecute(String response) {
     super.onPostExecute(response);
 
     String[] parts = response.split(":", 5);
