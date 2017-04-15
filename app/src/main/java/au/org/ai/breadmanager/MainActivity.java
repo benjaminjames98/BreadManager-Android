@@ -24,8 +24,6 @@ import java.util.Hashtable;
  */
 public class MainActivity extends AppCompatActivity {
 
-    // TODO overflow menu buttons to white
-
     private MainActivity mainActivity = this;
     private boolean connected = false;
     private Hashtable<String, Route> routes = new Hashtable<>(); // PK -> Route
