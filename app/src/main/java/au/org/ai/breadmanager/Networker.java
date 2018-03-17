@@ -48,9 +48,8 @@ class Networker extends AsyncTask<String, Integer, String> {
     String query = strings[0];
 
     String response = "-3";
-    //String TARGET_URL = "http://10.0.0.247/cityNet/BreadScript.php?";
-    //String TARGET_URL = "http://stott.id.au/cityNet/BreadScript.php?";
-    String TARGET_URL = "http://ai.org.au/ai-includes/BreadScript.php?";
+    //String TARGET_URL = "http://raspberrypi/bread/bread_script.php?";
+    String TARGET_URL = "http://ai.org.au/bread/bread_script.php?";
     String urlString = (TARGET_URL + query).replace(" ", "%20");
     System.out.println(urlString);
 

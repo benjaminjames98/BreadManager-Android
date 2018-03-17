@@ -84,6 +84,7 @@ class Route {
       public void onClick(View view) {
         String query = mainActivity.getRegionCode() + ":" + mainActivity.getMacAddress() +
             ":ConfirmDeliveries:" + routePK + ":" + church.pk + "~delivered";
+        church.delivered = "delivered";
         new Networker(mainActivity).execute(query);
       }
     });
